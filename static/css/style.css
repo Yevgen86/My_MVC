@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+body {
+    height: 100vh;
+    background: url("/static/img/sunrise-1920.jpg") no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    padding: 30px;
+
+}
+h1 {
+    text-align: center;
+    color: darkorange;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+}
