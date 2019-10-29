@@ -13,8 +13,6 @@ body {
 
 header {
     width: 100%;
-    padding: 30px;
-
 }
 h1 {
     text-align: center;
@@ -26,4 +24,11 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     justify-items: center;
+}
+nav.navbar {
+    background: transparent!important;
+}
+a.navbar-brand {
+    color: darkorange;
+    text-transform: cursive;
 }
