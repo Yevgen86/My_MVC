@@ -31,4 +31,22 @@ nav.navbar {
 a.navbar-brand {
     color: darkorange;
     text-transform: cursive;
+    font-style: italic;
+    font-weight: 900: 
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    writing-mode: vertical-lr;
+}
+.nav-item a {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+form {
+    padding: 20px;
+    color: #fff!important;
+    max-width: 60%;
+    margin: 10px auto;
+}
+form .form-row {
+    flex-direction: row;
 }
