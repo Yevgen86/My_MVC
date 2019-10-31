@@ -86,7 +86,7 @@ form .form-row {
 
 .horizon-box {
     width: 100%;
-    margin: 116px 0;
+    margin: 260px 0;
     padding: 20px;
     position: relative;
     color: #fff;
@@ -99,7 +99,7 @@ form .form-row {
 }
 .horizon-list {
     margin: 0;
-    height: 130px;
+    height: 190px;
     position: relative;
 }
 .horizon-li:nth-child(1) {
