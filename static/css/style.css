@@ -29,18 +29,49 @@ nav.navbar {
     background: transparent!important;
 }
 a.navbar-brand {
-    color: darkorange;
-    text-transform: cursive;
+    color: darkorange!important;
     font-style: italic;
     font-weight: 900: 
-    letter-spacing: 2px;
-    word-spacing: 2px;
+    letter-spacing: 1.1px;
     writing-mode: vertical-lr;
+    font-family: fantasy;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    justify-content: space-around;
 }
 .nav-item a {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: .8em;
+    color: darkorange;
 }
+span.y {
+    display: block;
+    transform: rotate(-90deg);
+    margin: 20px 0 0 0;
+}
+span.k {
+    display: block;
+    transform: rotate(-90deg);
+    margin: 1px -5px 3px 0px;
+}
+span.m {
+    display: block;
+    transform: rotate(-90deg);
+    margin: 5px -3px -1px 4px;
+}
+span.v {
+    display: block;
+    transform: rotate(-90deg);
+    margin: 3px -8px 5px 4px;
+}
+span.c {
+    display: block;
+    transform: rotate(-90deg);
+    margin: 0px -9px -11px 8px;
+}
+
 form {
     padding: 20px;
     color: #fff!important;
@@ -49,4 +80,271 @@ form {
 }
 form .form-row {
     flex-direction: row;
+}
+
+/*  Home Horizont */
+
+.horizon-box {
+    width: 100%;
+    margin: 116px 0;
+    padding: 20px;
+    position: relative;
+    color: #fff;
+    height: 200px;
+}
+.horizon-box h2 {
+    text-align: center;
+    color: darkorange;
+    user-select: none;
+}
+.horizon-list {
+    margin: 0;
+    height: 130px;
+    position: relative;
+}
+.horizon-li:nth-child(1) {
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    transform: rotate(-25deg);
+}
+.horizon-li:nth-child(2) {   
+    position: absolute;
+    top: 21%;
+    left: 15%;
+    transform: rotate(-18deg);
+}
+.horizon-li:nth-child(3) {
+    position: absolute;
+    top: -16%;
+    left: 33%;
+    transform: rotate(-10deg);
+}
+.horizon-li:nth-child(4) {
+    position: absolute;
+    top: -17%;
+    right: 31%;
+    transform: rotate(9deg);
+}
+.horizon-li:nth-child(5) {
+    position: absolute;
+    top: 21%;
+    right: 15%;
+        transform: rotate(15deg);
+}
+.horizon-li:nth-child(6) {
+    position: absolute;
+    bottom: 6%;
+    right: 0;
+    transform: rotate(26deg);
+}
+.horizon-li a {
+    text-decoration: none!important;
+    color: darkorange;
+    font-size: .9em;
+}
+
+a:hover {
+    color: #00ffff!important;
+    transition: .7s;
+} 
+.horizon-li:hover {
+    padding-bottom: 25px;
+    transition: .7s;
+}
+
+/* About Page */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,800');
+
+#wrapper-about 
+{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: #101010;
+}
+#wrapper-about .container
+{
+    position: relative;
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+}
+.container .card 
+{
+    position: relative;
+    width: 250px;
+    background: linear-gradient(0deg,#1b1b1b, #222, #1b1b1b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    transition: .5s;
+}
+ #wrapper-about .number h2 
+ {
+    color: #777;
+    font-weight: 700;
+    font-size: 20px;
+    transition: .5s;
+ }
+
+ .container .card:hover
+ {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.5);
+ }
+ .container .card:before 
+ {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.03);
+    pointer-events: none;
+    z-index: 1;
+ }
+.card:hover h2
+{
+    color: darkorange;
+}
+.percent 
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #000;
+    background: #222;
+    z-index: 1000;
+}
+.percent .number 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.percent .number h2 span 
+{
+    font-size: 24px;
+    color: #777;
+}
+.card:hover .percent .number h2 span 
+{
+    color: #fff;
+}
+
+svg 
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+}
+svg circle 
+{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+
+svg circle:nth-child(2)
+{
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.card:nth-child(1) svg circle:nth-child(2) 
+{
+    stroke-dashoffset: calc(440 - (440 * 75) / 100);
+    stroke: #00ff43;
+}
+.card:nth-child(2) svg circle:nth-child(2) 
+{
+    stroke: #00a1ff;
+}
+.card:nth-child(3) svg circle:nth-child(2) 
+{
+    stroke: #ff04f7;
+}
+.card:nth-child(4) svg circle:nth-child(2) 
+{
+    stroke: #00ff43;
+}
+.card:nth-child(4) svg circle:nth-child(2) 
+{
+    stroke: #00ff43;
+}
+.card:nth-child(5) svg circle:nth-child(2) 
+{
+    stroke: #00ff43;
+}
+.card:nth-child(6) svg circle:nth-child(2) 
+{
+    stroke: #00ff43;
+}
+.card:nth-child(7) svg circle:nth-child(2) 
+{
+    stroke: #00ff43;
+}
+.card:nth-child(8) svg circle:nth-child(2) 
+{
+    stroke: #00ff43;
+}
+.card:nth-child(9) svg circle:nth-child(2) 
+{
+    stroke: #00ff43;
+}
+.card:nth-child(10) svg circle:nth-child(2) 
+{
+    stroke: #00ff43;
+}
+.card:nth-child(11) svg circle:nth-child(2) 
+{
+    stroke: #00ff43;
+}
+.card:nth-child(12) svg circle:nth-child(2) 
+{
+    stroke: #00ff43;
+}
+.card:nth-child(13) svg circle:nth-child(2) 
+{
+    stroke: #00ff43;
+}
+.text 
+{
+    position: relative;
+    color: #777;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: .5s;
+    margin-top: 20px;
+    user-select: none;
+    pointer-events: none;
+}
+.card:hover .number,
+.card:hover .text
+{
+    color: #fff;
 }
