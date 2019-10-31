@@ -110,8 +110,8 @@ form .form-row {
 }
 .horizon-li:nth-child(2) {   
     position: absolute;
-    top: 21%;
-    left: 15%;
+    top: 23%;
+    left: 16%;
     transform: rotate(-18deg);
 }
 .horizon-li:nth-child(3) {
